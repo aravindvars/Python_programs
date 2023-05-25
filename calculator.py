@@ -1,7 +1,10 @@
-x = float(input("Enter the value of X: ")) # Int is not just a data type in python instead it's also a function
-y = float(input("Enter the value of Y: "))
+def main():
+    x = int(input('What\'s x: '))
+    print(f'Square of {x} is: ', square(x))
 
-z= round(x+y)
-A = x / y
-print(f'Sum of both the numbers rounded off is {z:,}', sep='')
-print(f'{A:.2f}')
+
+def square(n):
+    return pow(n, 2)
+
+
+main()

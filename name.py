@@ -1,4 +1,4 @@
-import sys
+import sys   # sys is for command line arguments 
 
 if len(sys.argv) < 4:
     sys.exit('Too few arguments')

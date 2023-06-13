@@ -1,10 +1,10 @@
 def main():
     name = input('What\'s your name?: ')
-    hello(name)
+    print(hello(name))
 
 
 def hello(to='world'):
-    print('hello', to)
+    return f'hello {to}'   #assert statements are usually designed to test return values rather than side effects like print
 
-
-main()
+if __name__ == '__main__':
+    main()

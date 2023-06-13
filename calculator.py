@@ -1,5 +1,5 @@
 def main():
-    x = (input('What\'s x: '))
+    x = int(input('What\'s x: '))
     print(f'Square of {x} is: ', square(x))
 
 

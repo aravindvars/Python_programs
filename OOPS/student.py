@@ -1,18 +1,17 @@
-
+class Student: # class is a blueprint, a mould. A class can be termed as a data type that we have created in our code to match our requirements
+  ...
 
 
 def main():
   student = get_student()
-  if student['name'] == 'Padma':
-    student['house'] = 'Ravenclaw'
-  print(f'{student["name"]} from {student["house"]}')
+  print(f'{student.name} from {student.house}')
+  
 
 def get_student():
-  name = input('Name: ')
-  house = input('House: ')
-  return {'name': name, 'house': house}
-
-  # return (name, house) # This is a TUPLE. Tuples are immutable in sense you can't change the values of a tuple after declared where as a list are mutable meaning you can change the values of a list
+  student = Student() # object is when you use the mould to build something
+  student.name = input('Name: ')
+  student.house = input('House: ')
+  return student
 
 
 if __name__ == '__main__':
